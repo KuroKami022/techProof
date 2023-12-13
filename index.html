@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Event</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Create Event</h1>
+  <form id="event-form">
+    <label for="event-name-input">Event Name:</label>
+    <input type="text" id="event-name-input" required>
+
+    <label for="event-start-date-input">Start Date:</label>
+    <input type="date" id="event-start-date-input" required>
+
+    <label for="event-end-date-input">End Date:</label>
+    <input type="date" id="event-end-date-input" required>
+
+    <label for="event-location-input">Location:</label>
+    <input type="text" id="event-location-input" required>
+
+    <label for="event-tickets-select">Tickets:</label>
+    <select id="event-tickets-select">
+      <option value="free">Free</option>
+      <option value="paid">Paid</option>
+    </select>
+
+    <label for="event-approval-checkbox">Approval Required:</label>
+    <input type="checkbox" id="event-approval-checkbox">
+
+    <label for="event-capacity-input">Capacity:</label>
+    <input type="number" id="event-capacity-input">
+
+    <label for="event-visibility-select">Visibility:</label>
+    <select id="event-visibility-select">
+      <option value="public">Public</option>
+      <option value="private">Private</option>
+    </select>
+
+    <button type="submit">Create Event</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
